@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 
 namespace Async
 {
@@ -9,7 +10,7 @@ namespace Async
         /// <summary>
         /// Возвращает Id клиента
         /// </summary>
-        public int GetClientId()
+        public async Task<int> GetClientId()
         {
             return db.GetData(1);
         }
@@ -17,23 +18,15 @@ namespace Async
         /// <summary>
         /// Возвращает имя
         /// </summary>
-        public string GetFirstName(int clientId)
+        public async Task<string> GetFullName(int clientId)
         {
-            return db.GetData("Tom");
-        }
-
-        /// <summary>
-        /// Возвращает фамилию
-        /// </summary>
-        public string GetLastName(int clientId)
-        {
-            return db.GetData("Cruise");
+            return db.GetData("Tom Cruise");
         }
 
         /// <summary>
         /// Возвращает Id кредита
         /// </summary>
-        public long GetCreditId(int clientId)
+        public async Task<long> GetCreditId(int clientId)
         {
             return db.GetData(12345678987654321);
         }
@@ -41,7 +34,7 @@ namespace Async
         /// <summary>
         /// Возвращает дату получения кредита
         /// </summary>
-        public DateTime GetDateOfCredit(long creditId)
+        public async Task<DateTime> GetDateOfCredit(long creditId)
         {
             return db.GetData(new DateTime(2020, 05, 01));
         }
@@ -49,7 +42,7 @@ namespace Async
         /// <summary>
         /// Возвращает сумму кредита
         /// </summary>
-        public int GetCreditAmount(long creditId)
+        public async Task<int> GetCreditAmount(long creditId)
         {
             return db.GetData(94000);
         }
@@ -57,7 +50,7 @@ namespace Async
         /// <summary>
         /// Возвращает ежемесячный процент по кредиту
         /// </summary>
-        public int GetMonthlyRate(long creditId)
+        public async Task<int> GetMonthlyRate(long creditId)
         {
             return db.GetData(2);
         }
@@ -65,7 +58,7 @@ namespace Async
         /// <summary>
         /// Возвращает ежемесячный платеж по кредиту
         /// </summary>
-        public int GetMonthlyPayment(long creditId)
+        public async Task<int> GetMonthlyPayment(long creditId)
         {
             return db.GetData(4000);
         }
@@ -73,7 +66,7 @@ namespace Async
         /// <summary>
         /// Возвращает срок кредита
         /// </summary>
-        public int GetCreditTerm(long creditId)
+        public async Task<int> GetCreditTerm(long creditId)
         {
             return db.GetData(24);
         }

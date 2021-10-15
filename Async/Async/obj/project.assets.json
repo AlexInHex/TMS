@@ -8,20 +8,28 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {}
+    "C:\\Users\\Wolf\\.nuget\\packages\\": {},
+    "D:\\Visual Studio\\компоненты, инструменты и пакеты SDK\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\Async\\Async\\Async.csproj",
+      "projectUniqueName": "D:\\Alexey\\VS\\Проекты\\TeachMeSkill\\TMS\\Async\\Async\\Async.csproj",
       "projectName": "Async",
-      "projectPath": "C:\\Users\\Admin\\source\\repos\\Async\\Async\\Async.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\source\\repos\\Async\\Async\\obj\\",
+      "projectPath": "D:\\Alexey\\VS\\Проекты\\TeachMeSkill\\TMS\\Async\\Async\\Async.csproj",
+      "packagesPath": "C:\\Users\\Wolf\\.nuget\\packages\\",
+      "outputPath": "D:\\Alexey\\VS\\Проекты\\TeachMeSkill\\TMS\\Async\\Async\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "D:\\Visual Studio\\компоненты, инструменты и пакеты SDK\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Wolf\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
