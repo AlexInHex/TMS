@@ -31,7 +31,7 @@ namespace Async
 
             return new CreditInfo
             {
-                FullName = $"{firstName} + {secondName}",
+                FullName = $"{await firstName} {await secondName}",
                 PaidAmount = paidAmount,
                 LeftToPay =  await creditAmount + interestCharges - paidAmount
             };
