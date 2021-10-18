@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using StudentConsoleHWApp.Validator;
 
 namespace StudentConsoleHWApp.Commands
 {
@@ -11,34 +12,31 @@ namespace StudentConsoleHWApp.Commands
 
         public AddCommand(Repository repository, string[] parametrs)
             : base(repository, parametrs)
-        { }
+        {
+            validator = new AddValidator(parametrs);
+        }
 
         public override string Execute()
-        {
+        {     
             
-            string userText = Console.ReadLine();
-            string[] parametrs = userText.Split(',');
-            
-                        
-            string newStudentName = parametrs[0];
-            string newStudentSurname = parametrs[1];
-            string newStudentGender = parametrs[2];
-            int newStudentAge = int.Parse(parametrs[3]);
+            for (int i = 0; i < parametrs.Length - 1; i++)
+            {
+                if (parametrs[i] == null)
+                {
+                    return "Введены не все параметры команды add.";
+                }
+            }
+
+            string newStudentName = parametrs[1];
+            string newStudentSurname = parametrs[2];
+            string newStudentGender = parametrs[3];
+            int newStudentAge = int.Parse(parametrs[4]);
 
             Student newStudent = new Student(newStudentName, newStudentSurname, newStudentGender, newStudentAge);
 
+            var result = repository.Add(newStudent);
 
-            return "Студент создан";
-            
-
-
-            
-
-
-            
-            
-
-            
+            return result != 0 ? "Студент создан" : "Студент не создан";            
         }
     }
 }

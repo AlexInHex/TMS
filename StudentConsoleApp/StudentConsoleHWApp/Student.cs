@@ -8,76 +8,48 @@ namespace StudentConsoleHWApp
 {
     class Student
     {
-        private string name;
+       /*private string name;
         private string surname;
         private string gender;
         private int age;
-        private int id;
+        private int id;*/
 
-        public string Name
-        {
-            get 
-            {
-                return name;
-            }           
-        
-        }
-        public string Surname
-        {
-            get
-            {
-                return surname;
-            }
+        public string Name { get; private set; }
+        public string Surname { get; private set; }
+        public string Gender { get; private set; }
+        public int Age { get; private set;}
+        public int Id { get; set; }            
 
-        }
-        public string Gender
+        public Student(int idStudent, string nameStudent, string surNameStudent, string genderStudent, int ageStudent)
         {
-            get
-            {
-                return gender;
-            }
+            Name = nameStudent;
+            Surname = surNameStudent;
+            Gender = genderStudent;
+            Age = ageStudent;
+            Id = idStudent;
+        }
 
-        }
-        public int Age
+        public Student(string nameStudent, string surNameStudent, string genderStudent, int ageStudent)
+            : this (0, nameStudent, surNameStudent, genderStudent, ageStudent)
         {
-            get
-            {
-                return age;
-            }
-            set
-            {
-                
-            }
-        }
-        public int Id
-        {
-            get
-            {
-                return id;
-            }
-            set
-            {
-                
-            }
+           /* Name = nameStudent;
+            Surname = surNameStudent;
+            Gender = genderStudent;
+            Age = ageStudent;*/
 
         }
 
-        public Student(int id, string n, string surN, string g, int a)
+        public void Update(Student student)
         {
-            n = name;
-            surN = surname;
-            g = gender;
-            a = age;
-            this.id = id;
+            Name = student.Name;
+            Surname = student.Surname;
+            Gender = student.Gender;
+            Age = student.Age;
         }
 
-        public Student(string n, string surN, string g, int a): this (0, n, surN, g, a)
+        public override string ToString()
         {
-            n = name;
-            surN = surname;
-            g = gender;
-            a = age;
-            
+            return $"ID студента: {Id}, имя: {Name}, фамилия: {Surname}, пол: {Gender}, возраст: {Age}. ";
         }
     }
 }

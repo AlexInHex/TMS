@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\____Алексей\\VS\\Проекты\\TeachMeSkill\\StudentConsoleHWApp\\StudentConsoleHWApp\\StudentConsoleHWApp.csproj": {}
+    "D:\\Alexey\\VS\\Проекты\\TeachMeSkill\\TMS\\StudentConsoleApp\\StudentConsoleHWApp\\StudentConsoleHWApp.csproj": {}
   },
   "projects": {
-    "D:\\____Алексей\\VS\\Проекты\\TeachMeSkill\\StudentConsoleHWApp\\StudentConsoleHWApp\\StudentConsoleHWApp.csproj": {
+    "D:\\Alexey\\VS\\Проекты\\TeachMeSkill\\TMS\\StudentConsoleApp\\StudentConsoleHWApp\\StudentConsoleHWApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\____Алексей\\VS\\Проекты\\TeachMeSkill\\StudentConsoleHWApp\\StudentConsoleHWApp\\StudentConsoleHWApp.csproj",
+        "projectUniqueName": "D:\\Alexey\\VS\\Проекты\\TeachMeSkill\\TMS\\StudentConsoleApp\\StudentConsoleHWApp\\StudentConsoleHWApp.csproj",
         "projectName": "StudentConsoleHWApp",
-        "projectPath": "D:\\____Алексей\\VS\\Проекты\\TeachMeSkill\\StudentConsoleHWApp\\StudentConsoleHWApp\\StudentConsoleHWApp.csproj",
+        "projectPath": "D:\\Alexey\\VS\\Проекты\\TeachMeSkill\\TMS\\StudentConsoleApp\\StudentConsoleHWApp\\StudentConsoleHWApp.csproj",
         "packagesPath": "C:\\Users\\Wolf\\.nuget\\packages\\",
-        "outputPath": "D:\\____Алексей\\VS\\Проекты\\TeachMeSkill\\StudentConsoleHWApp\\StudentConsoleHWApp\\obj\\",
+        "outputPath": "D:\\Alexey\\VS\\Проекты\\TeachMeSkill\\TMS\\StudentConsoleApp\\StudentConsoleHWApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Visual Studio\\компоненты, инструменты и пакеты SDK\\NuGetPackages",

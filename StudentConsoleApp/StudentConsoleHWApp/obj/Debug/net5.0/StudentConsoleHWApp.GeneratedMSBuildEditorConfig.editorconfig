@@ -7,4 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = StudentConsoleHWApp
-build_property.ProjectDir = D:\____Алексей\VS\Проекты\TeachMeSkill\StudentConsoleHWApp\StudentConsoleHWApp\
+build_property.ProjectDir = D:\Alexey\VS\Проекты\TeachMeSkill\TMS\StudentConsoleApp\StudentConsoleHWApp\

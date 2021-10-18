@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using StudentConsoleHWApp.Commands;
 using StudentConsoleHWApp;
+using StudentConsoleHWApp.Validator;
 
 namespace StudentsConsoleApp
 {
@@ -19,29 +20,47 @@ namespace StudentsConsoleApp
 
         public Command Parse(string input)
         {
-            var inpurArr = input.Split();
-            string[] parametrs = new string[4];
-            int index = 0;
+            var inpurArr = input.Split(" ");
+            string[] parametrs = new string[6];
+            int index = 0;            
+
+
 
             foreach (var item in inpurArr)
             {
-                if (string.IsNullOrEmpty(item) && index < parametrs.Length)
+                if (!string.IsNullOrEmpty(item) && index < parametrs.Length)
                 {
                     parametrs[index] = item;
                     index++;
                 }
             }
 
-            switch (parametrs[0].ToUpper())
+            if (parametrs[0] == null)
             {
-                case "ADD":
-                    return new AddCommand(repository, parametrs);
-                    break;
-                default:
-                    return new Command(repository, parametrs);
+                return new UnknownCommand(repository, parametrs);
             }
-
-
+            else
+            {
+                switch (parametrs[0].ToUpper())
+                {
+                    case "ADD":
+                        return new AddCommand(repository, parametrs);
+                    case "EDIT":
+                        return new EditCommand(repository, parametrs);
+                    case "LIST":
+                        return new ListCommand(repository, parametrs);
+                    case "DELETE":
+                        return new DeleteCommand(repository, parametrs);
+                    case "FIND":
+                        return new FindCommand(repository, parametrs);
+                    case "GET":
+                        return new GetCommand(repository, parametrs);
+                    case "RANDOM":
+                        return new RandomCommand(repository, parametrs);
+                    default:
+                        return new UnknownCommand(repository, parametrs);
+                }
+            }
         }
     }
 }
