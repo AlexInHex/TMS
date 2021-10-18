@@ -18,9 +18,14 @@ namespace Async
         /// <summary>
         /// Возвращает имя
         /// </summary>
-        public async Task<string> GetFullName(int clientId)
+        public async Task<string> GetFirstName(int clientId)
         {
-            return await Task.Run(() => db.GetData("Tom Cruise"));
+            return await Task.Run(() => db.GetData("Tom"));
+        }
+
+        public async Task<string> GetSecondName(int clientId)
+        {
+            return await Task.Run(() => db.GetData("Cruise"));
         }
 
         /// <summary>

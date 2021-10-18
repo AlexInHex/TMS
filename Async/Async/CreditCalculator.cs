@@ -10,7 +10,8 @@ namespace Async
         public async Task<CreditInfo> Calculate()
         {
             Task<int> clientId = repository.GetClientId();
-            Task<string> fullName = repository.GetFullName(await clientId);            
+            Task<string> firstName = repository.GetFirstName(await clientId);
+            Task<string> secondName = repository.GetSecondName(await clientId);
             Task<long> creditId = repository.GetCreditId(await clientId);
 
             Task<DateTime> dateOfCredit = repository.GetDateOfCredit(await creditId);
@@ -20,19 +21,19 @@ namespace Async
             Task<int> creditTerm = repository.GetCreditTerm(await creditId);
 
             // Вычисляем количество месяцев с получения кредита
-            Task<int> months =  12 * (DateTime.Now.Year - dateOfCredit.Year) + DateTime.Now.Month - dateOfCredit.Month;
+            int months =  12 * (DateTime.Now.Year - (await dateOfCredit).Year) + (DateTime.Now.Month - (await dateOfCredit).Month);
 
             // Вычисляем уже выплаченную сумму
-            Task<int> paidAmount = months * monthlyPayment;
+            int paidAmount = months * (await monthlyPayment);
 
             // Вычисляем общую сумму платежа по процентам
-            double interestCharges = creditAmount * monthlyRate / 100 * creditTerm;
+            double interestCharges = (await creditAmount) * (await monthlyRate) / 100 * (await creditTerm);
 
             return new CreditInfo
             {
-                FullName = $"{fullName}",
+                FullName = $"{firstName} + {secondName}",
                 PaidAmount = paidAmount,
-                LeftToPay = creditAmount + interestCharges - paidAmount
+                LeftToPay =  await creditAmount + interestCharges - paidAmount
             };
         }
     }
