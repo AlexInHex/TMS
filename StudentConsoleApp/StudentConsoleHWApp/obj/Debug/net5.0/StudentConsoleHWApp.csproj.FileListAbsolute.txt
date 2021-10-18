@@ -1,0 +1,16 @@
+D:\Alexey\VS\Проекты\TeachMeSkill\TMS\StudentConsoleApp\StudentConsoleHWApp\bin\Debug\net5.0\StudentConsoleHWApp.exe
+D:\Alexey\VS\Проекты\TeachMeSkill\TMS\StudentConsoleApp\StudentConsoleHWApp\bin\Debug\net5.0\StudentConsoleHWApp.deps.json
+D:\Alexey\VS\Проекты\TeachMeSkill\TMS\StudentConsoleApp\StudentConsoleHWApp\bin\Debug\net5.0\StudentConsoleHWApp.runtimeconfig.json
+D:\Alexey\VS\Проекты\TeachMeSkill\TMS\StudentConsoleApp\StudentConsoleHWApp\bin\Debug\net5.0\StudentConsoleHWApp.runtimeconfig.dev.json
+D:\Alexey\VS\Проекты\TeachMeSkill\TMS\StudentConsoleApp\StudentConsoleHWApp\bin\Debug\net5.0\StudentConsoleHWApp.dll
+D:\Alexey\VS\Проекты\TeachMeSkill\TMS\StudentConsoleApp\StudentConsoleHWApp\bin\Debug\net5.0\ref\StudentConsoleHWApp.dll
+D:\Alexey\VS\Проекты\TeachMeSkill\TMS\StudentConsoleApp\StudentConsoleHWApp\bin\Debug\net5.0\StudentConsoleHWApp.pdb
+D:\Alexey\VS\Проекты\TeachMeSkill\TMS\StudentConsoleApp\StudentConsoleHWApp\obj\Debug\net5.0\StudentConsoleHWApp.csproj.AssemblyReference.cache
+D:\Alexey\VS\Проекты\TeachMeSkill\TMS\StudentConsoleApp\StudentConsoleHWApp\obj\Debug\net5.0\StudentConsoleHWApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\Alexey\VS\Проекты\TeachMeSkill\TMS\StudentConsoleApp\StudentConsoleHWApp\obj\Debug\net5.0\StudentConsoleHWApp.AssemblyInfoInputs.cache
+D:\Alexey\VS\Проекты\TeachMeSkill\TMS\StudentConsoleApp\StudentConsoleHWApp\obj\Debug\net5.0\StudentConsoleHWApp.AssemblyInfo.cs
+D:\Alexey\VS\Проекты\TeachMeSkill\TMS\StudentConsoleApp\StudentConsoleHWApp\obj\Debug\net5.0\StudentConsoleHWApp.csproj.CoreCompileInputs.cache
+D:\Alexey\VS\Проекты\TeachMeSkill\TMS\StudentConsoleApp\StudentConsoleHWApp\obj\Debug\net5.0\StudentConsoleHWApp.dll
+D:\Alexey\VS\Проекты\TeachMeSkill\TMS\StudentConsoleApp\StudentConsoleHWApp\obj\Debug\net5.0\ref\StudentConsoleHWApp.dll
+D:\Alexey\VS\Проекты\TeachMeSkill\TMS\StudentConsoleApp\StudentConsoleHWApp\obj\Debug\net5.0\StudentConsoleHWApp.pdb
+D:\Alexey\VS\Проекты\TeachMeSkill\TMS\StudentConsoleApp\StudentConsoleHWApp\obj\Debug\net5.0\StudentConsoleHWApp.genruntimeconfig.cache
