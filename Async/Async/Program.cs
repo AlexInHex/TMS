@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Threading.Tasks;
 
 namespace Async
 {
@@ -11,7 +12,7 @@ namespace Async
 
             CreditCalculator calculator = new CreditCalculator();
             Stopwatch sw = Stopwatch.StartNew();
-            CreditInfo info = calculator.Calculate();
+            Task<CreditInfo> info = calculator.Calculate();
 
             Console.WriteLine($"Время загрузки: {sw.Elapsed}");
             Console.WriteLine(info);

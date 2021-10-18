@@ -12,7 +12,7 @@ namespace Async
         /// </summary>
         public async Task<int> GetClientId()
         {
-            return db.GetData(1);
+            return await Task.Run(() => db.GetData(1));
         }
 
         /// <summary>
@@ -20,7 +20,7 @@ namespace Async
         /// </summary>
         public async Task<string> GetFullName(int clientId)
         {
-            return db.GetData("Tom Cruise");
+            return await Task.Run(() => db.GetData("Tom Cruise"));
         }
 
         /// <summary>
@@ -28,15 +28,15 @@ namespace Async
         /// </summary>
         public async Task<long> GetCreditId(int clientId)
         {
-            return db.GetData(12345678987654321);
+            return await Task.Run(() => db.GetData(12345678987654321));
         }
 
         /// <summary>
-        /// Возвращает дату получения кредита
+        /// Возвращает дату получения кредита 
         /// </summary>
         public async Task<DateTime> GetDateOfCredit(long creditId)
         {
-            return db.GetData(new DateTime(2020, 05, 01));
+            return await Task.Run(() => db.GetData(new DateTime(2020, 05, 01)));
         }
 
         /// <summary>
@@ -44,7 +44,7 @@ namespace Async
         /// </summary>
         public async Task<int> GetCreditAmount(long creditId)
         {
-            return db.GetData(94000);
+            return await Task.Run(() => db.GetData(94000));
         }
 
         /// <summary>
@@ -52,7 +52,7 @@ namespace Async
         /// </summary>
         public async Task<int> GetMonthlyRate(long creditId)
         {
-            return db.GetData(2);
+            return await Task.Run(() => db.GetData(2));
         }
 
         /// <summary>
@@ -60,7 +60,7 @@ namespace Async
         /// </summary>
         public async Task<int> GetMonthlyPayment(long creditId)
         {
-            return db.GetData(4000);
+            return await Task.Run(() => db.GetData(4000));
         }
 
         /// <summary>
@@ -68,7 +68,7 @@ namespace Async
         /// </summary>
         public async Task<int> GetCreditTerm(long creditId)
         {
-            return db.GetData(24);
+            return await Task.Run(() => db.GetData(24));
         }
     }
 }
